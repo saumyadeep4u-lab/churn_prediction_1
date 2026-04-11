@@ -22,7 +22,7 @@ from sklearn.svm import SVC
 from xgboost import XGBClassifier
 
 # Load pre-cleaned data 
-CLEANED_DATA_PATH = r"C:\Users\hp\Downloads\BIA\Customer_Churn _Prediction\Data\cleaned_data.csv"
+CLEANED_DATA_PATH = r"C:\Users\hp\Downloads\BIA\churn_prediction1\Data\cleaned_data.csv"
 data = pd.read_csv(CLEANED_DATA_PATH)
 data.head()
 print("Data loaded successfully.")
@@ -137,7 +137,7 @@ print(result_df)
 
 print("\nBest Model:", result_df.iloc[0]["Model"])
 
-MODEL_PATH= r"C:\Users\hp\Downloads\BIA\Customer_Churn _Prediction\best_model.pkl"
+MODEL_PATH= r"C:\Users\hp\Downloads\BIA\churn_prediction1\best_model.pkl"
 
 # Dump the model
 joblib.dump(best_model, MODEL_PATH)
